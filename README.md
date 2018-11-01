@@ -9,11 +9,11 @@ IAP15W4K58S4
 ## 工程文件
 * C语言
 
-time_uvproj
+`time.uvproj`
 
 * 汇编
 
-remote_key_asm.uvproj
+`remote_key_asm.uvproj`
 
 ## 使用单台单片机进行测试
 连接该台单片机的UART1的2号孔(RX)和3号孔(TX)
