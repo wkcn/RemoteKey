@@ -11,8 +11,9 @@ void main(void) {
     while(1)
     {
         // 检测是否收到数据
-        if((TX1_Cnt != RX1_Cnt) && (!B_TX1_Busy))   //收到数据, 发送空闲
+        if((TX1_Cnt != RX1_Cnt) && (!B_TX1_Busy))
         {
+            // 收到数据，并将数据中的键码赋给变量remoteKeyCode
             remoteKeyCode = RX1_Buffer[TX1_Cnt];
             if(++TX1_Cnt >= UART1_BUF_LENGTH)   TX1_Cnt = 0;
         }
