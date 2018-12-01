@@ -30,3 +30,31 @@ IAP15W4K58S4
 * 键位1: 小时-
 * 键位2: 分钟+
 * 键位3: 分钟-
+
+# PC与单片机交互
+
+## 连接方式
+使用串口转USB转接器，或者按以下方法连接单片机，使用烧录程序的USB传输数据。
+![](pic/serial_connection.jpeg)
+
+P16与P30相连，P17与P31相连。
+
+## 第三方依赖
+
+需要安装pyserial库。
+
+```bash
+pip install pyserial
+```
+
+## 设置
+
+根据需要修改`test_serial.py`中的`PORT, BAUDRATE`参数。
+
+## 执行
+`sudo python test_serial.py`
+
+注：需要管理员权限
+
+## 执行结果
+![](pic/test_serial.png)
